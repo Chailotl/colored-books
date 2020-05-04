@@ -10,6 +10,8 @@ public class FormatListener implements Listener
 	@EventHandler
 	public void onCloseBook(PlayerEditBookEvent event)
 	{
+		if (!event.isSigning()) { return; }
+		
 		// Get book
 		BookMeta book = event.getNewBookMeta();
 		
