@@ -7,11 +7,14 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import net.md_5.bungee.api.ChatColor;
 
 public class PreviewCommand implements CommandExecutor
 {
+	private Main plugin = JavaPlugin.getPlugin(Main.class);
+	
 	//@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
 	{
@@ -22,7 +25,7 @@ public class PreviewCommand implements CommandExecutor
 		else if (args[0].equals("info"))
 		{
 			// Send message
-			sender.sendMessage(ChatColor.YELLOW + "[ColoredBooks]" + ChatColor.GRAY + " Version " + Main.getInstance().getDescription().getVersion());
+			sender.sendMessage(ChatColor.YELLOW + "[ColoredBooks]" + ChatColor.GRAY + " Version " + plugin.getDescription().getVersion());
 			return true;
 		}
 		else if (args[0].equals("preview"))

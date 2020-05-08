@@ -10,13 +10,6 @@ import net.md_5.bungee.api.ChatColor;
 
 public class Main extends JavaPlugin
 {
-	private static Main main;
-	
-	public Main()
-	{
-		main = this;
-	}
-	
 	@Override
 	public void onEnable()
 	{
@@ -31,11 +24,6 @@ public class Main extends JavaPlugin
 	public void onDisable()
 	{
 		
-	}
-	
-	public static Main getInstance()
-	{
-		return main;
 	}
 	
 	public static BookMeta formatBook(BookMeta book)
