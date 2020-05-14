@@ -17,5 +17,14 @@ Replace § with & and signed books will become formatted! You can also view prev
 
 **/coloredbooks preview** - View formatted preview
 
+**/coloredbooks copy (title)** - Create a formatted signed copy with optional title
+
 ## Permissions
 coloredbooks.preview
+
+coloredbooks.copy
+
+## Aliases
+/cbooks
+
+/cb
