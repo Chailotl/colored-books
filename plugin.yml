@@ -9,10 +9,13 @@ commands:
   coloredbooks:
     description: Colored Books
     default: true
-    usage: "Usage: /coloredbooks [info|preview]"
-    aliases: cbooks
+    usage: "Usage: /coloredbooks [info|preview|copy]"
+    aliases: [cbooks, cb]
 
 permissions:
   coloredbooks.preview:
     default: true
     description: Allows you to make a formatted preview of a book
+  coloredbooks.copy:
+    default: true
+    description: Allows you to make formatted copies of a book

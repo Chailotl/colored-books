@@ -15,29 +15,29 @@ public class Main extends JavaPlugin
 	{
 		// Register command
 		this.getCommand("coloredbooks").setExecutor(new PreviewCommand());
-		
+
 		// Listeners
 		getServer().getPluginManager().registerEvents(new FormatListener(), this);
 	}
-	
+
 	@Override
 	public void onDisable()
 	{
-		
+
 	}
-	
+
 	public static BookMeta formatBook(BookMeta book)
 	{
 		// Get
 		List<String> pages = book.getPages();
-		List<String> newPages = new ArrayList<String>();
-		
+		List<String> newPages = new ArrayList<>();
+
 		// Format
 		for (String page : pages)
 		{
 			newPages.add(ChatColor.translateAlternateColorCodes('&', page));
 		}
-		
+
 		book.setPages(newPages);
 		return book;
 	}
