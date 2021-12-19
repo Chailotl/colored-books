@@ -1,4 +1,4 @@
-package com.raus.coloredBooks;
+package com.chai.coloredBooks;
 
 import org.bukkit.Material;
 import org.bukkit.command.Command;

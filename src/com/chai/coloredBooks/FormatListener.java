@@ -1,4 +1,4 @@
-package com.raus.coloredBooks;
+package com.chai.coloredBooks;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
